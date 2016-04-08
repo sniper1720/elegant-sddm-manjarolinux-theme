@@ -5,6 +5,6 @@ a simple and elegant sddm theme for  manjarolinux
 
 Manual Installation
 
-copy the folder elegant-manjarolinux  to /usr/share/apps/sddm/themes/
+copy the folder elegant-manjarolinux  to /usr/share/sddm/themes/
 change CurrentTheme to elegant-archlinux in /etc/sddm.conf or change it from sddm-kcm (setting menu)
 Have fun!
