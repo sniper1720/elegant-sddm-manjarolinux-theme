@@ -21,12 +21,23 @@ Rebuilt from the ground up with **Qt 6**, it is now faster, smoother, and fully 
 
 ## Installation
 
-### One-Line Install
+### One-Line Install (Interactive)
 
-Run this command to automatically install dependencies and setup the theme on **Manjaro Linux** (the script also works on Arch, Fedora, Debian, etc):
+This script will automatically detect your distribution, install dependencies, and let you **choose your preferred Layout** (Side or Center) and **Blur Strength** (None, Medium, or Strong) before activating the theme.
+
+Run this command on **Manjaro, Arch, Fedora, Debian**, or any supported Linux distribution:
 ```bash
 curl -sSL https://raw.githubusercontent.com/sniper1720/elegant-sddm-manjarolinux-theme/main/install.sh | sudo bash
 ```
+
+### Install via KDE System Settings
+
+If you are using KDE Plasma, you can install it directly from the UI:
+1. Go to **System Settings** > **Login Screen (SDDM)**.
+2. Click **"Get New SDDM Themes..."**.
+3. Search for **"Elegant Manjaro Linux"**.
+4. Click **Install**.
+
 
 ### Manual Installation
 
@@ -55,28 +66,31 @@ Getting this set up is super easy. Just follow these steps:
     sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/elegant-manjarolinux
     ```
 
-## Configuration
+## Customization
 
-You can customize the theme by editing `/usr/share/sddm/themes/elegant-manjarolinux/theme.conf`.
-
-**Switch Layouts:**
-```ini
-[General]
-# Options: Side (Default), Center
-layout=Center
-```
-
-**Change Background:**
-```ini
-[General]
-# Default Side Background (V1)
-background=Assets/background.png
-# Center Layout Background (V2)
-# background=Assets/background-center.png
-```
-
-To keep your settings safe from updates, preserve them by creating a `theme.conf.user` file:
+You can personalize the theme by editing the configuration. To keep your settings safe from updates, create (or edit) a `theme.conf.user` file:
 `/usr/share/sddm/themes/elegant-manjarolinux/theme.conf.user`
+
+### Available Options
+
+Add your overrides under the `[General]` section:
+
+```ini
+[General]
+# Choose Layout
+# Options: Side (Default/Classic), Center (Modern)
+layout=Side
+
+# Change your wallpaper (Provide absolute path)
+background=Assets/background.png
+
+# Adjust Background Blur Strength
+# Options: 0.0 (None), 0.5 (Medium), 1.0 (Strong/Default)
+BlurStrength=1.0
+```
+
+*Note: The "Change Background" button in KDE System Settings is also fully supported!*
+
 
 ## Dependencies
 
