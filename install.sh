@@ -10,7 +10,7 @@ THEME_DIR="/usr/share/sddm/themes/$THEME_NAME"
 
 echo -e "${GREEN}"
 echo "+---------------------------------------------+"
-echo "|          ELEGANT SDDM THEME v1.0.0            |"
+echo "|          ELEGANT SDDM THEME v1.2.0            |"
 echo "|       Crafted with ❤️ by sniper1720         |"
 echo "+---------------------------------------------+"
 echo -e "${NC}"
@@ -73,12 +73,14 @@ if git clone "$REPO_URL" "$TEMP_DIR"; then
     fi
 
     cp -r "$TEMP_DIR/$THEME_NAME" "$THEME_DIR"
+    cp "$TEMP_DIR/$THEME_NAME/customize.sh" "$THEME_DIR/customize.sh"
+    chmod +x "$THEME_DIR/customize.sh"
 
     # Layout Selection
     echo
     echo "Choose your preferred layout:"
-    echo "1. Side (Classic, Login on right) [Default]"
-    echo "2. Center (Modern, Login in middle)"
+    echo "1. Side (Login on right) [Default]"
+    echo "2. Center (Login in middle)"
     read -p "Enter selection [1/2]: " -n 1 -r < /dev/tty
     echo
     if [[ $REPLY =~ ^[2]$ ]]; then
@@ -175,6 +177,9 @@ background=Assets/background-center.png" > "$THEME_DIR/theme.conf.user"
         echo "To activate manually, set [Theme] Current=$THEME_NAME in /etc/sddm.conf.d/theme.conf"
     fi
 
+    echo
+    echo "Tip: You can customize the theme later by running:"
+    echo "sudo $THEME_DIR/customize.sh"
     echo -e "${GREEN}Installation Complete!${NC}"
 else
     echo -e "${RED}Failed to clone repository.${NC}"

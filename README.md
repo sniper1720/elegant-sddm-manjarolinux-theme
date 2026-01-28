@@ -68,17 +68,28 @@ Getting this set up is super easy. Just follow these steps:
 
 ## Customization
 
-You can personalize the theme by editing the configuration. To keep your settings safe from updates, create (or edit) a `theme.conf.user` file:
+You can customize the theme at any time (even after installation) by running the helper script.
+
+**To change Layout or Blur Strength:**
+1.  Navigate to the theme directory: `/usr/share/sddm/themes/elegant-manjarolinux/`
+2.  Run the customizer:
+    ```bash
+    sudo ./customize.sh
+    ```
+3.  Follow the on-screen prompts to switch layouts or adjust blur.
+
+Alternatively, you can manually edit the configuration file:
 `/usr/share/sddm/themes/elegant-manjarolinux/theme.conf.user`
 
-### Available Options
+### Manual Options
 
 Add your overrides under the `[General]` section:
 
 ```ini
 [General]
 # Choose Layout
-# Options: Side (Default/Classic), Center (Modern)
+# Options: Side (Default), Center
+
 layout=Side
 
 # Change your wallpaper (Provide absolute path)
