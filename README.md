@@ -30,6 +30,15 @@ Run this command on **Manjaro, Arch, Fedora, Debian**, or any supported Linux di
 curl -sSL https://raw.githubusercontent.com/sniper1720/elegant-sddm-manjarolinux-theme/main/install.sh | sudo bash
 ```
 
+### Install via AUR (Arch & Manjaro)
+
+You can easily install this theme from the AUR using your favorite helper (e.g., `yay` or `paru`):
+
+```bash
+yay -S sddm-theme-elegant-manjarolinux-git
+```
+*Note: After installing from AUR, run `sudo /usr/share/sddm/themes/elegant-manjarolinux/customize.sh` to customize and activate it!*
+
 ### Install via KDE System Settings
 
 If you are using KDE Plasma, you can install it directly from the UI:
