@@ -1,6 +1,6 @@
 pkgbase = sddm-theme-elegant-manjarolinux-git
 	pkgdesc = A simple and elegant SDDM theme for Manjaro Linux
-	pkgver = 1.2.0.r26.g1e49d47
+	pkgver = 1.2.0.r28.gb635cd0
 	pkgrel = 1
 	url = https://github.com/sniper1720/elegant-sddm-manjarolinux-theme
 	install = elegant-manjarolinux.install
