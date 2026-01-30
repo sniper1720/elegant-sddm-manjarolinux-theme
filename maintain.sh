@@ -42,5 +42,10 @@ echo "Pushing to remotes..."
 git push origin main
 git push gitlab main
 
+# Create KDE Store Package
+echo "Creating KDE Store archive..."
+tar -czf "../elegant-manjarolinux.tar.gz" elegant-manjarolinux/
+
 echo "Done! All remotes synced."
+echo "   Archive created: ../elegant-manjarolinux.tar.gz"
 echo "   Don't forget to push to AUR!"

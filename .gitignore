@@ -12,6 +12,5 @@ theme.conf.user
 src/
 elegant-sddm-*/
 
-
 # Arch Packaging
 packaging/.SRCINFO
