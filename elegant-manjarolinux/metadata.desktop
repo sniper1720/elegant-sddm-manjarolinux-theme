@@ -1,6 +1,6 @@
 [SddmGreeterTheme]
-Name=Elegant Arch Linux
-Description=An elegant SDDM theme for Arch Linux.
+Name=Elegant Manjaro Linux
+Description=An elegant SDDM theme for Manjaro Linux.
 License=CC-BY-SA
 Type=sddm-theme
 Version=1.0
@@ -8,6 +8,6 @@ Screenshot=Screenshots/side.png
 MainScript=Main.qml
 ConfigFile=theme.conf
 TranslationsDirectory=translations
-Theme-Id=elegant-archlinux
+Theme-Id=elegant-manjarolinux
 Theme-API=2.0
 QtVersion=6
