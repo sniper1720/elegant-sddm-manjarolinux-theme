@@ -53,18 +53,24 @@ If you are using KDE Plasma, you can install it directly from the UI:
 
 Getting this set up is super easy. Just follow these steps:
 
-1.  **Clone the repo** to your machine:
+1.  **Dependencies**: Make sure you have these packages installed:
+    -   `sddm`
+    -   `qt6-base`
+    -   `qt6-declarative`
+    -   `qt6-svg`
+
+2.  **Clone the repo** to your machine:
     ```bash
     git clone https://github.com/sniper1720/elegant-sddm-manjarolinux-theme.git
     cd elegant-sddm-manjarolinux-theme
     ```
 
-2.  **Move the theme folder** to where SDDM expects it:
+3.  **Move the theme folder** to where SDDM expects it:
     ```bash
     sudo cp -r elegant-manjarolinux /usr/share/sddm/themes/
     ```
 
-3.  **Activate it!**
+4.  **Activate it!**
     Open (or create) `/etc/sddm.conf.d/elegant-manjarolinux.conf` and add:
     ```ini
     [Theme]
@@ -113,15 +119,6 @@ BlurStrength=1.0
 > [!NOTE]
 > The "Change Background" button in KDE System Settings is also fully supported!
 
-
-## Dependencies
-
-Make sure you have these packages installed (you probably fit the requirements already if you're on Manjaro/Arch):
-
--   `sddm`
--   `qt6-base`
--   `qt6-declarative`
--   `qt6-svg`
 
 ## ❤️ Support the Project
 
